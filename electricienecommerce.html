@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectricTools Pro - Outils Électriques Professionnels</title>
+    <meta name="description" content="Découvrez notre gamme complète d'outils électriques professionnels pour installations électriques. Multimètres, testeurs de tension, pinces, tournevis isolés et plus encore.">
+    
+    <!-- Shopify-like meta tags -->
+    <meta name="shopify-checkout-api-token" content="gid://shopify/CheckoutApiToken/12345">
+    <meta name="shopify-digital-wallet" content="true">
+    <meta name="shopify-payment-options" content="paypal,stripe">
+    
+    <!-- CDN Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Shopify-like structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "OnlineStore",
+        "name": "ElectricTools Pro",
+        "url": "https://electrictools-pro.netlify.app",
+        "logo": "https://electrictools-pro.netlify.app/logo.png",
+        "description": "Outils électriques professionnels pour installations électriques",
+        "paymentAccepted": ["Credit Card", "PayPal", "Apple Pay"],
+        "currenciesAccepted": "EUR",
+        "priceRange": "€15-€500"
+    }
+    </script>
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .shopify-cart { display: none; }
+        .product-card:hover { transform: translateY(-4px); transition: all 0.3s ease; }
+        .hero-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .price-tag { background: linear-gradient(45deg, #ff6b6b, #ee5a24); }
+    </style>
+    
+    <!-- Shopify-like tracking -->
+    <script>
+        window.Shopify = window.Shopify || {};
+        window.Shopify.shop = "electrictools-pro.myshopify.com";
+        window.Shopify.theme = { name: "Dawn", id: 123456789, role: "main" };
+        window.Shopify.currency = { active: "EUR", rate: "1.0" };
+    </script>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Shopify-like cart sidebar (hidden) -->
+    <div id="cart-drawer" class="shopify-cart fixed right-0 top-0 h-full w-80 bg-white shadow-xl z-50 transform translate-x-full transition-transform">
+        <div class="p-4 border-b">
+            <h3 class="text-lg font-semibold">Panier (0)</h3>
+        </div>
+        <div class="p-4">
+            <p class="text-gray-500">Votre panier est vide</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">ElectricTools Pro</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="relative">
+                        <i class="fas fa-shopping-cart text-xl text-gray-600"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                    </button>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-user mr-2"></i>Connexion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">Outils Électriques Professionnels</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Découvrez notre gamme complète d'outils électriques de haute qualité pour tous vos travaux d'installation électrique. Des multimètres aux testeurs de tension, équipez-vous comme un professionnel.</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                <i class="fas fa-arrow-down mr-2"></i>Découvrir nos produits
+            </button>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Les Outils Essentiels pour Installations Électriques</h3>
+                
+                <div class="prose prose-lg max-w-none text-gray-700 mb-12">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Les électriciens professionnels ont besoin d'outils spécialisés pour effectuer leur travail de manière efficace et sécurisée. Leur trousse à outils doit comprendre une gamme d'outils manuels robustes et isolés, ainsi que des équipements haute technologie qu'ils peuvent utiliser partout où leur travail les mène.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed mb-6">
+                        Au-delà des outils pratiques nécessaires pour faire le travail, il existe également des outils logiciels disponibles pour aider les entrepreneurs électriciens à gérer leur entreprise et à jongler avec les demandes quotidiennes de prendre des appels, programmer des rendez-vous, dispatcher les techniciens sur les chantiers et commercialiser l'entreprise.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-4">
+                            <i class="fas fa-tools mr-2"></i>Catégories d'Outils Essentiels
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-blue-700">
+                            <li>Outils manuels de base (pinces, tournevis, cutters)</li>
+                            <li>Instruments de mesure électrique (multimètres, testeurs)</li>
+                            <li>Outils de sécurité et protection individuelle</li>
+                            <li>Équipements spécialisés pour installations</li>
+                            <li>Outils de diagnostic et analyseurs de circuits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Notre Gamme de Produits</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Multimeter -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                        <i class="fas fa-tachometer-alt text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Multimètre Digital Pro</h4>
+                        <p class="text-gray-600 text-sm mb-4">Mesure précise de tension, courant et résistance. Écran LCD haute définition avec rétroéclairage.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">89,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="multimeter">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(124 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Voltage Tester -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
+                        <i class="fas fa-bolt text-6xl text-red-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Testeur de Tension Sans Contact</h4>
+                        <p class="text-gray-600 text-sm mb-4">Détection sécurisée de tension 50-600V. Signal sonore et visuel. Conforme aux normes de sécurité.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">34,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="voltage-tester">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(89 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Pliers Set -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                        <i class="fas fa-grip-horizontal text-6xl text-green-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Set de Pinces Électricien</h4>
+                        <p class="text-gray-600 text-sm mb-4">Kit complet: pinces coupantes, bec effilé, universelles. Poignées isolées 1000V. Acier haute qualité.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">67,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="pliers-set">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(156 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Screwdriver Set -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                        <i class="fas fa-screwdriver text-6xl text-purple-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Tournevis Isolés Professionnels</h4>
+                        <p class="text-gray-600 text-sm mb-4">Set de 12 tournevis isolés 1000V. Phillips, plats, Torx. Poignées ergonomiques antidérapantes.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">45,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="screwdriver-set">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(78 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Wire Strippers -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                        <i class="fas fa-cut text-6xl text-orange-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Dénudoir de Câbles Automatique</h4>
+                        <p class="text-gray-600 text-sm mb-4">Dénudage précis 10-24 AWG. Mécanisme automatique. Lames en acier trempé haute précision.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">28,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="wire-strippers">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(203 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Circuit Analyzer -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center">
+                        <i class="fas fa-microchip text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Analyseur de Circuit Digital</h4>
+                        <p class="text-gray-600 text-sm mb-4">Analyse complète des circuits. Détection de polarité, tension, défauts. Écran LCD rétroéclairé.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">156,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="circuit-analyzer">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(67 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Electrical Tape -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                        <i class="fas fa-tape text-6xl text-gray-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Ruban Isolant Professionnel</h4>
+                        <p class="text-gray-600 text-sm mb-4">Pack de 10 rouleaux 19mm x 25m. PVC haute qualité. Résistant aux UV et températures extrêmes.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">15,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="electrical-tape">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(142 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8: Safety Equipment -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+                        <i class="fas fa-hard-hat text-6xl text-yellow-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Kit de Sécurité Électricien</h4>
+                        <p class="text-gray-600 text-sm mb-4">Gants isolants, lunettes de protection, casque. Conformes normes CE. Protection maximale sur chantier.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="price-tag text-white px-3 py-1 rounded-full font-bold">95,99 €</span>
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" data-product="safety-kit">
+                                <i class="fas fa-cart-plus mr-1"></i>Ajouter
+                            </button>
+                        </div>
+                        <div class="mt-3 flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(91 avis)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">Pourquoi Choisir ElectricTools Pro ?</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shipping-fast text-2xl text-blue-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Livraison Rapide</h4>
+                    <p class="text-gray-600">Livraison gratuite sous 24-48h pour toute commande supérieure à 75€</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Garantie 3 Ans</h4>
+                    <p class="text-gray-600">Tous nos outils sont garantis 3 ans pièces et main d'œuvre</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-2xl text-purple-600"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Support Expert</h4>
+                    <p class="text-gray-600">Notre équipe d'électriciens experts vous conseille 7j/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center justify-center space-x-8 opacity-60">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-certificate text-2xl text-blue-600 mr-2"></i>
+                    <span class="font-semibold">Certifié CE</span>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-award text-2xl text-green-600 mr-2"></i>
+                    <span class="font-semibold">ISO 9001</span>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-lock text-2xl text-purple-600 mr-2"></i>
+                    <span class="font-semibold">Paiement Sécurisé</span>
+                </div>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-truck text-2xl text-orange-600 mr-2"></i>
+                    <span class="font-semibold">Livraison Assurée</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-bolt text-blue-400 text-2xl"></i>
+                        <h3 class="text-xl font-bold">ElectricTools Pro</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Votre partenaire de confiance pour tous vos outils électriques professionnels.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Produits</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Multimètres</a></li>
+                        <li><a href="#" class="hover:text-white">Testeurs de tension</a></li>
+                        <li><a href="#" class="hover:text-white">Pinces électricien</a></li>
+                        <li><a href="#" class="hover:text-white">Tournevis isolés</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Service Client</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                        <li><a href="#" class="hover:text-white">Livraison</a></li>
+                        <li><a href="#" class="hover:text-white">Retours</a></li>
+                        <li><a href="#" class="hover:text-white">Garantie</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Partenaires</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://electricien.belmard-batiment.fr/" rel="dofollow" class="hover:text-white">electricien.belmard-batiment.fr</a></li>
+                        <li><a href="#" class="hover:text-white">Installateurs partenaires</a></li>
+                        <li><a href="#" class="hover:text-white">Formations</a></li>
+                        <li><a href="#" class="hover:text-white">Certifications</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ElectricTools Pro. Tous droits réservés. | Mentions légales | Politique de confidentialité</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopify-like JavaScript -->
+    <script>
+        // Simulate Shopify cart functionality
+        let cart = [];
+        let cartCount = 0;
+
+        // Product data (simulating Shopify product objects)
+        const products = {
+            'multimeter': { id: 1, name: 'Multimètre Digital Pro', price: 89.99, variant_id: 12345 },
+            'voltage-tester': { id: 2, name: 'Testeur de Tension Sans Contact', price: 34.99, variant_id: 12346 },
+            'pliers-set': { id: 3, name: 'Set de Pinces Électricien', price: 67.99, variant_id: 12347 },
+            'screwdriver-set': { id: 4, name: 'Tournevis Isolés Professionnels', price: 45.99, variant_id: 12348 },
+            'wire-strippers': { id: 5, name: 'Dénudoir de Câbles Automatique', price: 28.99, variant_id: 12349 },
+            'circuit-analyzer': { id: 6, name: 'Analyseur de Circuit Digital', price: 156.99, variant_id: 12350 },
+            'electrical-tape': { id: 7, name: 'Ruban Isolant Professionnel', price: 15.99, variant_id: 12351 },
+            'safety-kit': { id: 8, name: 'Kit de Sécurité Électricien', price: 95.99, variant_id: 12352 }
+        };
+
+        // Simulate Shopify analytics
+        function trackEvent(eventName, properties) {
+            console.log('Shopify Analytics:', eventName, properties);
+        }
+
+        // Add to cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('[data-product]');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productKey = this.getAttribute('data-product');
+                    const product = products[productKey];
+                    
+                    if (product) {
+                        cart.push(product);
+                        cartCount++;
+                        
+                        // Update cart count in header
+                        const cartCountElement = document.querySelector('.fas.fa-shopping-cart + span');
+                        if (cartCountElement) {
+                            cartCountElement.textContent = cartCount;
+                        }
+                        
+                        // Simulate Shopify cart add event
+                        trackEvent('Added to Cart', {
+                            product_id: product.id,
+                            variant_id: product.variant_id,
+                            product_name: product.name,
+                            price: product.price,
+                            currency: 'EUR'
+                        });
+                        
+                        // Visual feedback
+                        this.innerHTML = '<i class="fas fa-check mr-1"></i>Ajouté';
+                        this.classList.remove('bg-blue-600', 'hover:bg-blue-700');
+                        this.classList.add('bg-green-500');
+                        
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-cart-plus mr-1"></i>Ajouter';
+                            this.classList.remove('bg-green-500');
+                            this.classList.add('bg-blue-600', 'hover:bg-blue-700');
+                        }, 2000);
+                    }
+                });
+            });
+        });
+
+        // Simulate Shopify theme events
+        window.addEventListener('load', function() {
+            trackEvent('Page Viewed', {
+                page_type: 'collection',
+                page_title: 'ElectricTools Pro - Outils Électriques Professionnels'
+            });
+        });
+
+        // Smooth scrolling for hero button
+        document.querySelector('.hero-gradient button').addEventListener('click', function() {
+            document.querySelector('.py-16.bg-gray-50').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Shopify-like structured data for products -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Product",
+                "position": 1,
+                "name": "Multimètre Digital Pro",
+                "description": "Mesure précise de tension, courant et résistance",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "89.99",
+                    "priceCurrency": "EUR",
+                    "availability": "https://schema.org/InStock"
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
